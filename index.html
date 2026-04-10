@@ -1,0 +1,300 @@
+<!doctype html>
+<html class="light" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS con plugins de forms y container-queries -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- Google Fonts: Manrope para títulos, Inter para cuerpo -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Material Symbols: íconos de Google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Configuración de tema Tailwind (colores, fuentes, radios personalizados) -->
+    <script src="tailwind.config.js"></script>
+
+    <!-- Estilos propios del proyecto -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>MicroData — Consultoría Económica</title>
+  </head>
+
+  <body class="bg-background text-on-surface font-body antialiased">
+
+    <!-- ==============================
+         NAVEGACIÓN PRINCIPAL
+         Fixed en la parte superior con efecto blur/frosted glass
+    ============================== -->
+    <nav class="navbar">
+      <div class="navbar__inner">
+        <a href="#" class="navbar__logo">MicroData</a>
+
+        <div class="navbar__links">
+          <a href="#" class="navbar__link navbar__link--active">Home</a>
+          <a href="#servicios" class="navbar__link">Services</a>
+          <a href="#contacto" class="navbar__link">Contact</a>
+        </div>
+
+        <button class="btn btn--primary">Solicitar Diagnóstico</button>
+      </div>
+    </nav>
+
+    <main class="pt-24">
+
+      <!-- ==============================
+           HERO — Sección principal
+           Grid de 2 columnas: texto a la izquierda, imagen a la derecha
+      ============================== -->
+      <section class="hero">
+        <div class="hero__bg-grid architectural-grid"></div>
+        <div class="hero__glow hero__glow--right"></div>
+        <div class="hero__glow hero__glow--left"></div>
+
+        <div class="hero__inner">
+
+          <!-- Columna de texto -->
+          <div class="hero__content">
+            <span class="badge">Estrategia &amp; Precisión</span>
+
+            <h1 class="hero__title">
+              Consultoría económica y financiera para el
+              <span class="hero__title-accent">Crecimiento Sostenible</span>.
+            </h1>
+
+            <p class="hero__description">
+              Transformamos la incertidumbre económica en estructuras sólidas.
+              Consultoría estratégica diseñada exclusivamente para microempresas
+              que buscan liderar su mercado.
+            </p>
+
+            <div class="hero__actions">
+              <button class="btn btn--primary btn--lg">Iniciar Consultoría</button>
+              <button class="btn btn--secondary btn--lg">Nuestra Metodología</button>
+            </div>
+          </div>
+
+          <!-- Columna de imagen -->
+          <div class="hero__image-wrapper">
+            <div class="hero__image-card">
+              <div class="hero__image-grid architectural-grid"></div>
+              <img
+                class="hero__image"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXas2PcndGJ9CvpM6QrVvNvVHtkGpD_9CgLfsKUgQdiX5Ae3nSKc72RKySD57hxLOvI16p1zWN549hnZRJtPth8bBP1cBIqmnoqxcMZxdwcfUZu0E6sRP-SJJfK6QledMc_5Oco1aBFUjJMhvdTUbaOP_MenWUxXE9G8KR1ZlvSyelvylS9ESGVbUVP9YB7lzKkVVidv2f7MJ3tOuDJYYwyGZgXeJMPGWvvUpmq0Ytf-l9VWrKhnt1NrBl0DRK2kceLfNbmRnCO-k"
+                alt="Composición geométrica que simboliza estabilidad financiera"
+              />
+              <div class="hero__image-overlay"></div>
+
+              <div class="hero__quote">
+                <span class="material-symbols-outlined hero__quote-icon">account_balance</span>
+                <p class="hero__quote-text">
+                  "La precisión en el dato es el primer paso hacia la libertad operativa."
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==============================
+           SERVICIOS — Tres tarjetas en grid
+           La tarjeta central está marcada como "Prioritario"
+      ============================== -->
+      <section id="servicios" class="services">
+        <div class="max-w-7xl mx-auto px-12">
+
+          <div class="section-header">
+            <h2 class="section-title">Soluciones Estructurales</h2>
+            <p class="section-subtitle">
+              Tres pilares fundamentales diseñados para cada etapa de su jornada empresarial.
+            </p>
+          </div>
+
+          <div class="services__grid">
+
+            <!-- Tarjeta 1: Emprendimiento -->
+            <div class="service-card">
+              <div class="service-card__header">
+                <span class="material-symbols-outlined service-card__icon">rocket_launch</span>
+                <h3 class="service-card__title">Emprendimiento y Marca</h3>
+                <p class="service-card__description">
+                  Para proyectos en fase de gestación que requieren una base financiera inquebrantable.
+                </p>
+              </div>
+
+              <ul class="service-card__features">
+                <li class="service-card__feature">
+                  <span class="material-symbols-outlined service-card__check">check_circle</span>
+                  Modelado de viabilidad económica
+                </li>
+                <li class="service-card__feature">
+                  <span class="material-symbols-outlined service-card__check">check_circle</span>
+                  Estructura de costos unitarios
+                </li>
+                <li class="service-card__feature">
+                  <span class="material-symbols-outlined service-card__check">check_circle</span>
+                  Proyección de flujo de caja 12m
+                </li>
+              </ul>
+
+              <button class="btn btn--outline btn--full">Ver Detalles</button>
+            </div>
+
+            <!-- Tarjeta 2: Rescate (destacada) -->
+            <div class="service-card service-card--featured">
+              <span class="service-card__badge">Prioritario</span>
+
+              <div class="service-card__header">
+                <span
+                  class="material-symbols-outlined service-card__icon"
+                  style="font-variation-settings: 'FILL' 1"
+                >emergency_home</span>
+                <h3 class="service-card__title">Rescate Empresarial</h3>
+                <p class="service-card__description">
+                  Intervención táctica para negocios con dificultades operativas o financieras críticas.
+                </p>
+              </div>
+
+              <ul class="service-card__features">
+                <li class="service-card__feature">
+                  <span class="material-symbols-outlined service-card__check" style="font-variation-settings: 'FILL' 1">check_circle</span>
+                  Auditoría de pasivos y deuda
+                </li>
+                <li class="service-card__feature">
+                  <span class="material-symbols-outlined service-card__check" style="font-variation-settings: 'FILL' 1">check_circle</span>
+                  Optimización de gastos fijos
+                </li>
+                <li class="service-card__feature">
+                  <span class="material-symbols-outlined service-card__check" style="font-variation-settings: 'FILL' 1">check_circle</span>
+                  Reestructuración de tesorería
+                </li>
+                <li class="service-card__feature">
+                  <span class="material-symbols-outlined service-card__check" style="font-variation-settings: 'FILL' 1">check_circle</span>
+                  Plan de contingencia inmediata
+                </li>
+              </ul>
+
+              <button class="btn btn--primary btn--full">Solicitar Intervención</button>
+            </div>
+
+            <!-- Tarjeta 3: Data Analysis -->
+            <div class="service-card">
+              <div class="service-card__header">
+                <span class="material-symbols-outlined service-card__icon">analytics</span>
+                <h3 class="service-card__title">Data Analysis</h3>
+                <p class="service-card__description">
+                  Monitoreo avanzado y visualización de indicadores clave para decisiones ágiles.
+                </p>
+              </div>
+
+              <ul class="service-card__features">
+                <li class="service-card__feature">
+                  <span class="material-symbols-outlined service-card__check">check_circle</span>
+                  Dashboard de KPIs personalizado
+                </li>
+                <li class="service-card__feature">
+                  <span class="material-symbols-outlined service-card__check">check_circle</span>
+                  Análisis de mercado
+                </li>
+                <li class="service-card__feature">
+                  <span class="material-symbols-outlined service-card__check">check_circle</span>
+                  Reportes mensuales de rentabilidad
+                </li>
+              </ul>
+
+              <button class="btn btn--outline btn--full">Explorar Paneles</button>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================
+           PRUEBA SOCIAL — Métricas clave
+           Texto a la izquierda, cuatro cifras destacadas a la derecha
+      ============================== -->
+      <section class="stats">
+        <div class="stats__inner">
+
+          <div class="stats__copy">
+            <h2 class="stats__title">Metodología de Grado Institucional</h2>
+            <p class="stats__description">
+              Nuestros clientes han reportado un incremento promedio del 40% en
+              su margen operativo tras 6 meses de implementación.
+            </p>
+            <a href="#" class="stats__link">
+              Conozca nuestros casos de éxito
+              <span class="material-symbols-outlined stats__link-icon">trending_flat</span>
+            </a>
+          </div>
+
+          <!-- Las métricas se renderizan dinámicamente desde main.js -->
+          <div class="stats__grid" id="stats-grid"></div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ==============================
+         FOOTER
+         4 columnas: marca, servicios, legal, social
+    ============================== -->
+    <footer id="contacto" class="footer">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <p class="footer__logo">LedgerConsult</p>
+          <p class="footer__tagline">
+            Socio estratégico para la estabilidad financiera y el crecimiento
+            acelerado de micro-unidades de negocio.
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <p class="footer__col-title">Servicios</p>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">Strategic Advisory</a></li>
+            <li><a href="#" class="footer__link">Risk Analysis</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <p class="footer__col-title">Legal</p>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">Privacy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <p class="footer__col-title">Social</p>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">LinkedIn</a></li>
+            <li><a href="#" class="footer__link">Twitter</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2024 Architectural Ledger. Precision in Strategy.</p>
+        <div class="footer__icons">
+          <span class="material-symbols-outlined footer__icon">security</span>
+          <span class="material-symbols-outlined footer__icon">verified_user</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script principal: lógica del sitio -->
+    <script src="main.js"></script>
+  </body>
+</html>
