@@ -13,7 +13,8 @@
   <!-- ====== OPEN GRAPH ====== -->
   <meta property="og:title" content="Asesoría para microempresas en crisis | MV Desarrollo Empresarial" />
   <meta property="og:description" content="Diagnóstico financiero y operativo sin costo. Ayudamos a microempresarios a tomar decisiones estratégicas para rescatar o hacer crecer su negocio." />
-  <!-- Se omite og:image para evitar enlace roto; se puede añadir después -->
+  <!-- ====== CAMBIA ESTA URL CUANDO TENGAS LA IMAGEN ====== -->
+  <!-- <meta property="og:image" content="URL_DE_LA_IMAGEN_SOCIAL.jpg" /> -->
   <meta property="og:url" content="https://mvdesarrollomx.com/" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_MX" />
@@ -105,7 +106,7 @@
       border-bottom:1px solid var(--line);
     }
     .logo{ display:flex; align-items:center; gap:0.7rem; }
-    .logo svg{ height:40px; width:auto; flex-shrink:0; }
+    .logo img{ height:40px; width:auto; flex-shrink:0; }
     .logo-text{ display:flex; flex-direction:column; line-height:1.15; }
     .logo-text strong{ font-family:var(--display); font-weight:700; font-size:1.05rem; color:var(--navy); }
     .logo-text span{ font-size:0.62rem; font-weight:700; color:var(--green); letter-spacing:0.06em; }
@@ -379,11 +380,7 @@
   <!-- HEADER -->
   <header class="main-header">
     <div class="logo">
-      <!-- SVG inline como logo -->
-      <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="60" height="60" rx="12" fill="#001634"/>
-        <text x="30" y="40" font-family="'Space Grotesk', sans-serif" font-size="28" font-weight="700" fill="#02a06e" text-anchor="middle">MV</text>
-      </svg>
+      <img src="logo-icon.png" alt="MV Desarrollo Empresarial" />
       <div class="logo-text">
         <strong>MV Desarrollo</strong>
         <span>EMPRESARIAL</span>
@@ -418,12 +415,7 @@
 
       <div class="hero-visual">
         <div class="card">
-          <!-- Logo SVG grande en el hero -->
-          <svg class="hero-logo" viewBox="0 0 400 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="120" rx="20" fill="white"/>
-            <text x="200" y="65" font-family="'Space Grotesk', sans-serif" font-size="42" font-weight="700" fill="#001634" text-anchor="middle">MV Desarrollo</text>
-            <text x="200" y="100" font-family="'Manrope', sans-serif" font-size="22" font-weight="700" fill="#01855b" text-anchor="middle" letter-spacing="4">EMPRESARIAL</text>
-          </svg>
+          <img class="hero-logo" src="logo-full.png" alt="MV Desarrollo Empresarial" />
         </div>
       </div>
     </div>
@@ -589,7 +581,6 @@
         <div class="dash-icon"><i class="fas fa-chart-pie"></i></div>
         <h3>Estudio de mercado · INEGI</h3>
         <p>Saturación de giros comerciales y oportunidades de negocio usando datos del DENUE.</p>
-        <!-- Se elimina el enlace a mapa.html, se sustituye por placeholder -->
         <button class="btn-outline dashboard-placeholder"><i class="fas fa-chart-simple"></i> Explorar mercado (próximamente)</button>
       </div>
     </div>
@@ -618,11 +609,7 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <!-- SVG inline en footer -->
-    <svg class="footer-logo" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="200" height="60" rx="12" fill="#001634"/>
-      <text x="100" y="38" font-family="'Space Grotesk', sans-serif" font-size="24" font-weight="700" fill="#02a06e" text-anchor="middle">MV Desarrollo</text>
-    </svg>
+    <img class="footer-logo" src="logo-icon-light.png" alt="MV Desarrollo Empresarial" />
     <p>MV DESARROLLO EMPRESARIAL — ASESORÍA ECONÓMICA PARA MICROEMPRESAS DE BAJA CALIFORNIA</p>
     <p>© 2026 · TIJUANA, TECATE, ROSARITO</p>
   </footer>
